@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {  // DOM이 완전히 
         rewrittenTextElement.innerText = '';  // 리라이팅된 텍스트 표시 영역을 초기화합니다.
 
         try {
-            const response = await fetch('http://localhost:3000/rewrite', {  // 백엔드 API로 POST 요청을 보냅니다.
+            const response = await fetch('https://port-0-backend-ly9ig2ti56e078b0.sel5.cloudtype.app/rewrite', {  // 백엔드 API로 POST 요청을 보냅니다.
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'  // 요청 본문이 JSON 형식임을 명시합니다.
